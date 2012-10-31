@@ -3,7 +3,7 @@
 	<div class="twelve columns">
 	  <ul class="top-bar">
 		<ul>
-	  <li class="name"><h1><a href="#">Formality</a></h1></li>
+	  <li class="name"><h1><a href="#">CoreVitals</a></h1></li>
 	  <li class="toggle-topbar"><a href="#"></a></li>
 	</ul>
 	<section>

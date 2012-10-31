@@ -1,4 +1,15 @@
 <?php
+
+date_default_timezone_set('America/New_York');
+
+$HOSTNAME = php_uname('n');
+
+define('CAKE_ENV', isset($_SERVER['CAKE_ENV']) ? $_SERVER['CAKE_ENV'] : 'production');
+define('DATE_FORMAT', 'M dS, Y');
+define('SHORT_DATE_FORMAT', 'm-d-Y');
+define('DATE_TIME_FORMAT', 'm-d-Y h:i:s a');
+define('MAX_RESULTS', 25);
+
 /**
  * This is core configuration file.
  *
