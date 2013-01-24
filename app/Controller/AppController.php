@@ -9,7 +9,7 @@ class AppController extends Controller
 	public $action = null;
     public $helpers = array('Time', 'Html', 'Form', 'Session');
     public $uses = array('User');
-    public $components = array('Session', 'Cookie',
+    public $components = array('Session',
     	'RequestHandler',
 		'Auth' => array(
 			'authenticate' => array(
