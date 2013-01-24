@@ -1,5 +1,6 @@
 <?php
 App::uses('Sanitize', 'Utility');
+App::uses('CakeEmail', 'Network/Email');
 class AppController extends Controller
 {
 	public $currentUser = null;
@@ -8,7 +9,7 @@ class AppController extends Controller
 	public $action = null;
     public $helpers = array('Time', 'Html', 'Form', 'Session');
     public $uses = array('User');
-    public $components = array('Session',
+    public $components = array('Session', 'Cookie',
     	'RequestHandler',
 		'Auth' => array(
 			'authenticate' => array(

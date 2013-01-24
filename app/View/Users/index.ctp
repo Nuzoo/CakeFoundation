@@ -5,8 +5,6 @@
 			<thead>
 				<th><?=__('Email')?></th>
 				<th><?=__('Full Name')?></th>
-				<th><?=__('Customer')?></th>
-				<th><?=__('Role')?></th>
 				<th><?=__('Created')?></th>
 				<th><?=__('Action')?></th>
 			</thead>
@@ -15,8 +13,6 @@
 				<tr>
 					<td><?=$this->Html->link($user['User']['email'], array('action'=>'edit', $user['User']['id']))?></td>
 					<td><?=$user['User']['fullname']?></td>
-					<td><?=$user['Customer']['title']?></td>
-					<td><?=$user['Role']['title']?></td>
 					<td><?=$this->Time->format(DATE_FORMAT, $user['User']['created'])?></td>
 					<td>
 						<a href="#" data-item-id="<?=$user['User']['id']?>" class="deleteButton"> <i class="icon-trash icon-large"></i></a>
